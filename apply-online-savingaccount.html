@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open A Savings Account</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            width: 200px;
+            font-weight: bold;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+        }
+        button:hover {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Open A Savings Account</h1>
+        <div>
+            <div class="section-title">Personal Details</div>
+            <form>
+                <div class="form-group">
+                    <label for="title">Title*</label>
+                    <select id="title" name="title" required>
+                        <option value="" disabled selected>Select your title</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Mrs">Mrs</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="middle-name">Middle Name</label>
+                    <input type="text" id="middle-name" name="middle-name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="fathers-name">Father's Name*</label>
+                    <input type="text" id="fathers-name" name="fathers-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile-number">Mobile Number*</label>
+                    <input type="number" id="mobile-number" name="mobile-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-id">Email ID</label>
+                    <input type="email" id="email-id" name="email-id">
+                </div>
+                <div class="form-group">
+                    <label for="aadhar-card-number">Aadhar Card Number*</label>
+                    <input type="number" id="aadhar-card-number" name="aadhar-card-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth*</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="section-title">Residential Address</div>
+                <div class="form-group">
+                    <label for="address-line-1">Address Line 1*</label>
+                    <input type="text" id="address-line-1" name="address-line-1" required>
+                </div>
+                <div class="form-group">
+                    <label for="address-line-2">Address Line 2*</label>
+                    <input type="text" id="address-line-2" name="address-line-2" required>
+                </div>
+                <div class="form-group">
+                    <label for="landmark">Landmark</label>
+                    <input type="text" id="landmark" name="landmark">
+                </div>
+                <div class="form-group">
+                    <label for="state">State*</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City*</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="pincode">Pincode*</label>
+                    <input type="number" id="pincode" name="pincode" required>
+                </div>
+
+                <div class="section-title">Permanent Address</div>
+                <div class="form-group">
+                    <input type="checkbox" id="same-address" name="same-address">
+                    <label for="same-address" style="width: auto;">Permanent Address same as Mailing Address</label>
+                </div>
+                <div class="form-group">
+                    <label for="perm-address-line-1">Address Line 1*</label>
+                    <input type="text" id="perm-address-line-1" name="perm-address-line-1" required>
+                </div>
+                <div class="form-group">
+                    <label for="perm-address-line-2">Address Line 2*</label>
+                    <input type="text" id="perm-address-line-2" name="perm-address-line-2" required>
+                </div>
+                <div class="form-group">
+                    <label for="perm-landmark">Landmark</label>
+                    <input type="text" id="perm-landmark" name="perm-landmark">
+                </div>
+                <div class="form-group">
+                    <label for="perm-state">State*</label>
+                    <input type="text" id="perm-state" name="perm-state" required>
+                </div>
+                <div class="form-group">
+                    <label for="perm-city">City*</label>
+                    <input type="text" id="perm-city" name="perm-city" required>
+                </div>
+                <div class="form-group">
+                    <label for="perm-pincode">Pincode*</label>
+                    <input type="text" id="perm-pincode" name="perm-pincode" required>
+                </div>
+
+                <div class="section-title">Occupation Details</div>
+                <div class="form-group">
+                    <label for="occupation-type">Occupation Type*</label>
+                    <select id="occupation-type" name="occupation-type" required>
+                        <option value="" disabled selected>Select your occupation type</option>
+                        <option value="Salaried">Salaried</option>
+                        <option value="Self-Employed">Self-Employed</option>
+                        <option value="Student">Student</option>
+                        <option value="Retired">Retired</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="source-of-income">Source of Income*</label>
+                    <select id="source-of-income" name="source-of-income" required>
+                        <option value="" disabled selected>Select your source of income</option>
+                        <option value="Salary">Salary</option>
+                        <option value="Business">Business</option>
+                        <option value="Investments">Investments</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="annual-income">Gross Annual Income*</label>
+                    <input type="number" id="annual-income" name="annual-income" required>
+                </div>
+
+                <div class="section-title">Debit/ATM Card</div>
+                <div class="form-group">
+                    <input type="checkbox" id="debit-card" name="debit-card">
+                    <label for="debit-card" style="width: auto;">Do you want a debit card?*</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="net-banking" name="net-banking">
+                    <label for="net-banking" style="width: auto;">Opt for Net Banking</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree" style="width: auto;">I agree...</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

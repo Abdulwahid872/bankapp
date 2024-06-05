@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .sidebar {
+            width: 20%;
+            float: left;
+            padding: 10px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 5px 0;
+        }
+        .main-content {
+            width: 75%;
+            float: right;
+            padding: 10px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        .main-content ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+        }
+        .main-content ul li {
+            padding: 5px 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <div class="sidebar">
+            <ul>
+                <li>Account Details</li>
+                <li>Account Summary</li>
+                <li>Funds Transfer</li>
+                <li>Account Statement</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <ul>
+                <li>Account Statement</li>
+                <li>Funds Transfer</li>
+                <li>User Profile</li>
+                <li>Change UserID/Password</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
